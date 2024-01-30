@@ -1,22 +1,17 @@
-# find out current active trasaction
+# Transactions in Java
 
-  private static void updateQuery() throws SQLException {
-        String sql ...
-        }
-    }
+## Overview:
 
-    private static boolean isCurrentActiveTransaction() throws SQLException {
-       
+Working with database with simple configuration and using maven
 
-        String sql = "SELECT \n" +
-                     "    COUNT(1) AS count\n" +
-                     "FROM\n" +
-                     "    INFORMATION_SCHEMA.INNODB_TRX\n" +
-                     "WHERE\n" +
-                     "    trx_mysql_thread_id = CONNECTION_ID()";
+## Task
 
-       
-}
-    
+1. create maven project
+2. add sql connector dependency and junit dependecy in pom.xml
+3. Inside DataManagement.insertDataIntoTable add code for inserting 4 records into table described by SQL code in DataManagement.sqlCreateTable
 
+To test solution run TransactionTest.test_EX_1
 
+### Input / Output:
+
+test should pass
